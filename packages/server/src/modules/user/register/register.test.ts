@@ -2,14 +2,14 @@ import { Connection } from "typeorm";
 import * as faker from "faker";
 
 import { User } from "../../../entity/User";
+import { duplicateEmail } from "./errorMessages";
+import { TestClient } from "../../../utils/TestClient";
+import { createTestConn } from "../../../testUtils/createTestConn";
 import {
-  duplicateEmail,
   emailNotLongEnough,
   invalidEmail,
   passwordNotLongEnough
-} from "./errorMessages";
-import { TestClient } from "../../../utils/TestClient";
-import { createTestConn } from "../../../testUtils/createTestConn";
+} from "@airdnd/common";
 
 faker.seed(Date.now() + 5);
 const email = faker.internet.email();
