@@ -17,7 +17,8 @@ const schema = yup.object().shape({
     .string()
     .min(3, emailNotLongEnough)
     .max(255)
-    .email(invalidEmail),
+    .email(invalidEmail)
+    .required(),
   password: registerPasswordValidation
 });
 
