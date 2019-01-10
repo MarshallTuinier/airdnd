@@ -29,6 +29,7 @@
     "typescript": "^2.9.1"
   },
   "dependencies": {
+    "@airdnd/common": "1.0.0",
     "@gql2ts/from-schema": "^1.8.0",
     "@types/express": "^4.11.1",
     "axios": "^0.18.0",
@@ -40,10 +41,10 @@
     "express-session": "^1.15.6",
     "faker": "^4.1.0",
     "glob": "^7.1.2",
-    "graphql": "^0.13.2",
-    "graphql-import": "^0.5.0",
-    "graphql-tools": "^3.0.0",
-    "graphql-yoga": "^1.9.2",
+    "graphql": "^14.0.2",
+    "graphql-import": "^0.7.1",
+    "graphql-tools": "^4.0.3",
+    "graphql-yoga": "^1.16.9",
     "ioredis": "^3.2.2",
     "merge-graphql-schemas": "^1.5.1",
     "node-fetch": "^2.1.2",
@@ -54,8 +55,7 @@
     "sparkpost": "^2.1.2",
     "typeorm": "0.2.0",
     "uuid": "^3.2.1",
-    "yup": "^0.24.1",
-    "@airdnd/common": "1.0.0"
+    "yup": "^0.24.1"
   },
   "scripts": {
     "start": "NODE_ENV=development nodemon --exec ts-node src/index.ts",
