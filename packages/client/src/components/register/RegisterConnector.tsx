@@ -1,13 +1,17 @@
 import * as React from "react";
 import { Register } from "./Register";
+import { RegisterController } from "@airdnd/controllers";
 
 export class RegisterConnector extends React.PureComponent {
-  dummySubmit = async (values: any) => {
-    console.log(values);
-    return null;
-  };
-
   render() {
-    return <Register submit={this.dummySubmit} />;
+    return (
+      <>
+        <RegisterController>
+          {({ submit }) => {
+            return <Register submit={submit} />;
+          }}
+        </RegisterController>
+      </>
+    );
   }
 }
